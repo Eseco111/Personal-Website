@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.2">
+  <title>Personal Introduction Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Shift profile picture slightly to the right */
+    #about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+
+    #about .about-text {
+      flex: 1 1 55%;
+    }
+
+    #about .about-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    transform: translateX(79px); /* Shift the image 20px to the left */
+    }
+
+
+    #about .about-image img {
+      width: 50%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Indent paragraphs */
+    p {
+      text-indent: 1.5em;
+    }
+
+    /* Clickable links styling */
+    .project-link, .blog-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .project-link:hover, .blog-link:hover {
+      color: var(--accent-color);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Hello, I’m Peter C</h1>
+    <p>    Welcome to my personal introduction website, where you can learn about my background, projects, and latest updates.</p>
+  </section>
+
+  <section id="about">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>    This section provides details about me, including my experiences, skills, and interests.</p>
+      <p>    I am a 3D modeler specializing in Blender.</p>
+      <p>    I am also an Arduino enthusiast, enjoying the creation of various projects.</p>
+      <p>    My goal is to become an entrepreneur and establish an agricultural technology company to provide more growing options for urban residents.</p>
+    </div>
+    <div class="about-image">
+      <img src="PeterC.jpg" alt="Profile Picture">
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <h3>M1911 A1 Custom Version 3D Model</h3>
+      <p>    Project description: A brief introduction to the background, technologies used, and results.</p>
+      <p>    A 3D model of the classic M1911 A1 pistol for 3D printing enthusiasts, ready for download and printing.</p>
+      <p>    Modeled using Blender based on engineering drawings, with detailed refinement of every component.</p>
+      <p>    Started in October 2024 and completed in February 2025, taking 4 months and a total of 144 hours.</p>
+      <p>    A companion animation simulation was specially made to demonstrate the firing process.</p>
+      <a class="project-link" href="https://www.artstation.com/artwork/a0dgk0" target="_blank">View on ArtStation</a>
+    </div>
+    <div class="project-item">
+      <h3>(PGB) Portable Growing Box</h3>
+      <p>    Project description: A brief introduction to the background, technologies used, and results.</p>
+      <p>    A portable growing box concept to address potential food supply issues caused by extreme weather conditions for urban residents.</p>
+      <p>    Enables urban users to grow vegetables at home without relying on large-scale agriculture.</p>
+      <p>    Started in December 2024 and currently in the prototype stage, expected to be completed by the end of 2026.</p>
+      <p>    After successful feasibility testing, an open-source hardware plan will be released to involve more enthusiasts.</p>
+      <a class="project-link" href="https://youtu.be/qC0dzgZDmcs?si=JlpnXs4C5-2QiRD6" target="_blank">Watch on YouTube</a>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <article>
+      <h3>Making of M1911 Custom 3D Model</h3>
+      <p>    Summary: The M1911 Custom model was designed for 3D printing, requiring precision. Modeling it in Blender was a challenge.</p>
+      <a class="blog-link" href="https://x.com/KIulius68686/status/1906937595436970430" target="_blank">Read the X.com Post</a>
+    </article>
+    <article>
+      <h3>Progress on Portable Growing Box</h3>
+      <p>    Summary: To address global agricultural risks caused by extreme climate changes, I propose a new solution.</p>
+      <a class="blog-link" href="Private Planting Box i3.pdf" target="_blank">View the PPT</a>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="social-links">
+      <a href="https://www.youtube.com/@vatablue" target="_blank">
+        <img src="youtube-icon.png" alt="YouTube">
+      </a>
+      <a href="https://www.facebook.com/VmBlu" target="_blank">
+        <img src="facebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.twitter.com/KIulius68686" target="_blank">
+        <img src="x.png" alt="X">
+      </a>
+    </div>
+  </section>
+
+  <footer style="text-align: center; padding: 1rem; background: #111; color: #aaa;">
+    <p>&copy; 2025 Peter C's Personal Introduction Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
